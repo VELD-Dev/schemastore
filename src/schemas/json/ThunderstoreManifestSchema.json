@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-04/schema#",
-  "$id": "https://gist.githubusercontent.com/VELD-Dev/696f0cbc06a4ce0098a07153c2622f5c/raw/0098c6ad87e6645f2b2d783de8cc820e1d74e294/ThunderstoreManifestSchema.json",
+  "id": "https://github.com/VELD-Dev/schemastore/edit/master/src/schemas/json/ThunderstoreManifestSchema.json",
   "description": "Schema for Thunderstore manifest files.",
   "type": "object",
   "properties":
