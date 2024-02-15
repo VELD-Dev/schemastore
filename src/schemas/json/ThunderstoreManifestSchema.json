@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft-04/schema#",
+  "$id": "https://gist.githubusercontent.com/VELD-Dev/696f0cbc06a4ce0098a07153c2622f5c/raw/0098c6ad87e6645f2b2d783de8cc820e1d74e294/ThunderstoreManifestSchema.json",
+  "description": "Schema for Thunderstore manifest files.",
+  "type": "object",
+  "properties":
+  {
+    "name":
+    {
+      "type": "string",
+      "description": "Name of the mod without spaces. [A-Za-z0-9_]"
+    },
+    "description":
+    {
+      "type": "string",
+      "description": "Short description of the mod. Max 250 characters."
+    },
+    "version_number":
+    {
+      "type": "string",
+      "description": "Version number following Semver convention. Major.Minor.Patch."
+    },
+    "dependencies":
+    {
+      "type": "array",
+      "description": "A list of dependencies for the mod.",
+      "items":
+      {
+        "type": "string",
+        "description": "A Mod package name (Author-ModName-Version)"
+      }
+    },
+    "website_url":
+    {
+      "type": "string",
+      "description": "URL of the mod. Can be a github repository or a Discord server. Can be empty."
+    },
+    "installers":
+    {
+      "type": "array",
+      "description": "Not implemented yet.",
+      "items":
+      {
+        "type": "object",
+        "description": "An installer instruction.",
+        "additionalProperties":
+        {
+          "oneOf":
+          [
+            {
+              "type": "string",
+              "description": "Identifier of the installer"
+            },
+            {
+              "type": "string",
+              "description": "Instructions of the installer"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
