@@ -26,8 +26,7 @@
       "description": "A list of dependencies for the mod.",
       "items":
       {
-        "type": "string",
-        "description": "A Mod package name (Author-ModName-Version)"
+        "type": "string"
       }
     },
     "website_url":
